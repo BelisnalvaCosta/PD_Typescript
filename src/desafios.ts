@@ -31,3 +31,4 @@ if(campoSaldo && buttonAtualizar) {
 function value(soma: HTMLButtonElement, value: any) {
     throw new Error("Function not implemented.");
 }
+import {  } from "module";
