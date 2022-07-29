@@ -8,15 +8,21 @@
         <script src="desafio-saldo.ts"></script>
     </head>
     <body>
-        <h4>Valor a ser adicionado:</h4> 
-        <input type="number" id="soma" placeholder="Digite os dados">
-        <button id="atualizar-saldo">Atualizar saldo</button>
-        <input type="number" id="atualizar-saldo" placeholder="Atualizar saldo">
-        <button id="limpar-saldo">Limpar seu saldo</button>
-        <input type="number" id="limapr-saldo" placeholder="Limpar saldo">        
-        <button id="campo-somarAoSaldo">Campo saldo</button>
-        <input type="number" id="campo-somarAoSaldo" placeholder="Saldo total">
-        <h2>"Seu saldo é: " <apan id="campo-somarAoSaldo"></apan></h2> 
-        
+        <h1>Faça aqui o seu calculo:</h1>
+        <button id="valor">valor</button> 
+        <input type="number" id="number1" placeholder="valor1">                           
+        <label><select id="operador"></label>
+        <option value="+" selected>+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>        
+        </select>           
+        <input type="number2" id="number2"><br>         
+        <button id="valor1">Atualizar saldo</button>
+        <input type="number" id="atualizar-saldo" placeholder=" "><br>
+        <button id="valor2">Seu saldo é:</button>
+        <input type="number" id="saldo" placeholder=" "></input><br>              
+        <button type="submit" id="limpar-saldo">Limpar saldo</button>                         
     </body>
 </html>

@@ -2,14 +2,13 @@
 let buttonAtualizar = document.getElementById('atualizar-saldo');
 let buttonLimpar = document.getElementById('limpar-saldo');
 let soma = document.getElementById('soma');
-let campoSaldo = document.getElementById('campo-saldo');
-// @ts-ignore
+let saldo = document.getElementById('saldo');
 // @ts-ignore
 let saldoTotal = 0;
 // @ts-ignore
 limparSaldo();
 
-if (campoSaldo && buttonAtualizar) 
+if (saldo && buttonAtualizar) 
     buttonAtualizar.addEventListener('click', () => {
         let valorASomar = Number(soma);
         somarAoSaldo(valorASomar);
@@ -19,19 +18,19 @@ if (campoSaldo && buttonAtualizar)
         limparSaldo();
     });
     function somarAoSaldo(valor) {
-        let valorCampoSaldo = 0;
+        let valorSaldo = 0;
         // @ts-ignore
-        if (campoSaldo.innerText !== "") {
+        if (saldo.innerText !== "") {
             // @ts-ignore
-            valorCampoSaldo = Number(campoSaldo.innerHTML);
+            valorSaldo = Number(saldo.innerHTML);
         }
-        const totalDaSoma = valorCampoSaldo + valor;
+        const totalDaSoma = valorSaldo + valor;
         // @ts-ignore
-        campoSaldo.innerText = totalDaSoma.toString();
+        saldo.innerText = totalDaSoma.toString();
     }
     function limparSaldo() {
         // @ts-ignore
-        campoSaldo.innerHTML = '0';
+        saldo.innerHTML = '0';
     }
 
     if(buttonAtualizar) 
